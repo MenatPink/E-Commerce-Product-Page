@@ -11,4 +11,13 @@ const navSlide = () => {
     })
 }
 
-navSlide();
+const carousel = () =>{
+    console.log("This is where the slider will work");
+}
+
+const app = () =>{
+    navSlide();
+    carousel();
+}
+
+app();
