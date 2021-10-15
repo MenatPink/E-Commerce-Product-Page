@@ -1,3 +1,119 @@
-body{
-    background-color:rgb(110, 216, 110);
+@use 'variables';
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+nav{
+    height:70px;
+    display:flex;
+    align-items:center;
+    .nav-left-container{
+        width:60%;
+        height:100%;
+        display:flex;
+        justify-content: space-around;
+        align-items:center;
+        padding:20px;
+    }
+    .nav-right-container{
+        width:40%;
+        height:100%;
+        display:flex;
+        justify-content:space-around;
+        align-items: center;
+        padding:30px;
+    }
+    #avatar{
+        width:30px;
+    }
+
+    #burger{
+        cursor:pointer;
+    }
+}
+.nav-links{
+    width:250px;
+    position:absolute;
+    z-index:1;
+    top:0px;
+    height:100vh;
+    background-color:variables.$white;
+    transition: 0.5s ease-in-out;
+    transform:translateX(-100%);
+    img{
+        margin-left:40px;
+        margin-top:20px;
+    }
+    ul{
+        height:300px;
+        padding:40px;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        list-style-type:none;
+    }
+    li{
+        font-weight:700;
+        font-size:variables.$paragraph-size;
+        cursor:pointer;
+    }
+    #menu-close{
+        cursor:pointer;
+    }
+}
+.carousel{
+    width:100%;
+    margin:auto;
+    height: 300px;
+    overflow:hidden;
+    position:relative;
+    .carousel-slide{
+        display:flex;
+        width:100%;
+        height:300px;
+    }
+    img{
+        object-fit: cover;
+        min-width:100%;
+     }
+     button{
+         position:absolute;
+         z-index:1;
+         background-color:white;
+         top:50%;
+         transform:translateY(-50%);
+         width:40px;
+         height:40px;
+         border-radius:50px;
+         border:none;
+         cursor:pointer;
+         img{
+             position:absolute;
+             min-width:0%;
+             width:12px;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%)
+         }
+     }
+     #nextBtn{
+         right:20px;
+        }
+        #prevBtn{
+         left:20px;
+     }
+}
+.description{
+    height:530px;
+}
+
+p{
+    font-family: variables.$font;
+}
+
+// CSS Animation & Transitions
+
+.nav-links.active{
+    transform:translateX(0%);
 }

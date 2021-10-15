@@ -1,5 +1,121 @@
-body {
-  background-color: #6ed86e;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+nav .nav-left-container {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+nav .nav-right-container {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+nav #avatar {
+  width: 30px;
+}
+nav #burger {
+  cursor: pointer;
+}
+
+.nav-links {
+  width: 250px;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  height: 100vh;
+  background-color: white;
+  transition: 0.5s ease-in-out;
+  transform: translateX(-100%);
+}
+.nav-links img {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.nav-links ul {
+  height: 300px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.nav-links li {
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+.nav-links #menu-close {
+  cursor: pointer;
+}
+
+.carousel {
+  width: 100%;
+  margin: auto;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.carousel .carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 300px;
+}
+.carousel img {
+  object-fit: cover;
+  min-width: 100%;
+}
+.carousel button {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+.carousel button img {
+  position: absolute;
+  min-width: 0%;
+  width: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.carousel #nextBtn {
+  right: 20px;
+}
+.carousel #prevBtn {
+  left: 20px;
+}
+
+.description {
+  height: 530px;
+}
+
+p {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.nav-links.active {
+  transform: translateX(0%);
 }
 
 /*# sourceMappingURL=style.css.map */

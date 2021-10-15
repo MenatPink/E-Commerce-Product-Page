@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="styles/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | E-commerce product page</title>
@@ -17,30 +18,79 @@
   </style>
 </head>
 <body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-left-container">
+      <img id="burger"src="images/icon-menu.svg" alt="Menu">
+      <img id="logo"src="images/logo.svg" alt="">
+    </div>
+    <div class="nav-right-container">
+      <img id="icon-cart" src="images/icon-cart.svg" alt="Cart">
+      <img id="avatar" src="images/image-avatar.png" alt="Avatar">
+    </div>
+  </nav>
+  <div class="nav-links">
+    <img id="menu-close" src="images/icon-close.svg" alt="Close">
+    <ul>
+      <li>
+        <p>Collections</p>
+      </li>
+      <li>
+        <p>Men</p>
+      </li>
+      <li>
+        <p>Women</p>
+      </li>
+      <li>
+        <p>About</p>
+      </li>
+      <li>
+        <p>Contact</p>
+      </li>
+    </ul>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+  </div>
+  <div class="carousel">
+    <div class="carousel-slide">
+      <img src="images/image-product-4.jpg" id="lastClone" alt="Last Image">
+      <img src="images/image-product-1.jpg" alt="Image 1">
+      <img src="images/image-product-2.jpg" alt="Image 2">
+      <img src="images/image-product-3.jpg" alt="Image 3">
+      <img src="images/image-product-4.jpg" alt="Image 4">
+      <img src="images/image-product-1.jpg" id="firstClone" alt="Image 1">
+    </div>
+    <button id="prevBtn">
+      <img src="images/icon-previous.svg" alt="">
+    </button>
+    <button id="nextBtn">
+      <img src="images/icon-next.svg" alt="">
+    </button>
+  </div>
+  <div class="description">
 
-  Sneaker Company
+    Sneaker Company
 
-  Fall Limited Edition Sneakers
+    Fall Limited Edition Sneakers
+  
+    These low-profile sneakers are your perfect casual wear companion. Featuring a 
+    durable rubber outer sole, they’ll withstand everything the weather can offer.
+  
+    $125.00
+    50%
+    $250.00
+  
+    0
+    Add to cart
+  </div>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
 
-  $125.00
-  50%
-  $250.00
 
-  0
-  Add to cart
+
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="app/app.js"></script>
 </body>
 </html>
