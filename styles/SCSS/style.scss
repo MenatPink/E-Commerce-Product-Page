@@ -12,9 +12,10 @@ nav{
         width:60%;
         height:100%;
         display:flex;
-        justify-content: space-around;
         align-items:center;
-        padding:20px;
+        #burger{
+            margin:0rem 1rem 0rem 1rem;
+        }
     }
     .nav-right-container{
         width:40%;
@@ -116,4 +117,8 @@ p{
 
 .nav-links.active{
     transform:translateX(0%);
+}
+
+@media (min-width:900px) {
+    
 }

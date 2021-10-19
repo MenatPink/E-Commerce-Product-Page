@@ -13,9 +13,10 @@ nav .nav-left-container {
   width: 60%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  padding: 20px;
+}
+nav .nav-left-container #burger {
+  margin: 0rem 1rem 0rem 1rem;
 }
 nav .nav-right-container {
   width: 40%;
