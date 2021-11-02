@@ -17,12 +17,17 @@ nav{
         width:40%;
         height:100%;
         display:flex;
-        justify-content:space-around;
+        justify-content: right;
         align-items: center;
-        padding:30px;
+        // padding:30px;
     }
     #avatar{
         width:30px;
+        margin:0rem 1rem 0rem 1rem;
+    }
+    #icon-cart{
+        // margin-right:20px;
+        // margin-left:auto;
     }
 
     #burger{
