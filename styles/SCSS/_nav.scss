@@ -1,0 +1,68 @@
+@use 'variables';
+
+nav{
+    height:70px;
+    display:flex;
+    align-items:center;
+    .nav-left-container{
+        width:60%;
+        height:100%;
+        display:flex;
+        align-items:center;
+        #burger{
+            margin:0rem 1rem 0rem 1rem;
+        }
+    }
+    .nav-right-container{
+        width:40%;
+        height:100%;
+        display:flex;
+        justify-content:space-around;
+        align-items: center;
+        padding:30px;
+    }
+    #avatar{
+        width:30px;
+    }
+
+    #burger{
+        cursor:pointer;
+    }
+}
+
+.nav-links{
+    width:250px;
+    position:absolute;
+    z-index:1;
+    top:0px;
+    height:100vh;
+    background-color:variables.$white;
+    transition: 0.5s ease-in-out;
+    transform:translateX(-100%);
+    img{
+        margin-left:40px;
+        margin-top:20px;
+    }
+    ul{
+        height:300px;
+        padding:40px;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        list-style-type:none;
+    }
+    li{
+        font-weight:700;
+        font-size:variables.$paragraph-size;
+        cursor:pointer;
+    }
+    #menu-close{
+        cursor:pointer;
+    }
+}
+
+// CSS Animation & Transitions
+
+.nav-links.active{
+    transform:translateX(0%);
+}

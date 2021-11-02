@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, p {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
 nav {
   height: 70px;
   display: flex;
@@ -22,16 +26,12 @@ nav .nav-right-container {
   width: 40%;
   height: 100%;
   display: flex;
-  justify-content: right;
+  justify-content: space-around;
   align-items: center;
+  padding: 30px;
 }
 nav #avatar {
   width: 30px;
-  margin: 0rem 1rem 0rem 1rem;
-  cursor: pointer;
-}
-nav #icon-cart {
-  cursor: pointer;
 }
 nav #burger {
   cursor: pointer;
@@ -66,6 +66,10 @@ nav #burger {
 }
 .nav-links #menu-close {
   cursor: pointer;
+}
+
+.nav-links.active {
+  transform: translateX(0%);
 }
 
 .carousel {
@@ -113,14 +117,51 @@ nav #burger {
 
 .description {
   height: 530px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
 }
-
-p {
+.description h4 {
+  color: #ff7d1a;
   font-family: "Kumbh Sans", sans-serif;
 }
-
-.nav-links.active {
-  transform: translateX(0%);
+.description h1 {
+  margin-top: 10px;
+}
+.description p {
+  color: #68707d;
+  margin: 1em 0em 1em 0em;
+  line-height: 25px;
+}
+.description .prices-container {
+  display: flex;
+  align-items: center;
+}
+.description .price {
+  margin-top: 0px;
+}
+.description .discount-percentage {
+  background-color: #ffede0;
+  height: 25px;
+  width: 45px;
+  border-radius: 5px;
+  margin-left: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.description .discount-percentage p {
+  color: #ff7d1a;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+.description .old-price {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 0;
+  text-decoration-line: line-through;
+  color: #b6bcc8;
 }
 
 /*# sourceMappingURL=style.css.map */
