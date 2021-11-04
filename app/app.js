@@ -22,7 +22,6 @@ const nextBtn = document.querySelector('#nextBtn');
 //Counter
 let counter = 1;
 const size = carouselImages[0].clientWidth;
-console.log(size);
 
 carouselSlide.style.transform='translateX(' + (-size * counter ) + 'px)';
 
@@ -54,6 +53,53 @@ carouselSlide.addEventListener('transitionend', ()=>{
         carouselSlide.style.transform='translateX(' + (-size * counter ) + 'px)';
     }
 });
+
+//------------------------------------------------------------------------------------------
+/*
+MAKING THE ITEM COUNTER WORK
+*/
+
+// Select Number Icon on screen
+let itemNumber;
+const itemNumberContainer = document.querySelector("#itemNumberContainer");
+
+// Set icon Number to zero and show it
+itemNumber = 0;
+itemNumberContainer.innerHTML = 0;
+// Select plus button
+const itemPlus = document.querySelector("#itemPlus");
+// Select minus button
+const itemMinus = document.querySelector("#itemMinus");
+// when plus button is clicked, add one to item number variable
+itemPlus.addEventListener('click', ()=>{
+    itemNumber++;
+    itemNumberContainer.innerHTML = itemNumber;
+});
+// when minus number is clicked, take away one from number variable
+itemMinus.addEventListener('click', ()=>{
+    itemNumber--;
+    itemNumberContainer.innerHTML = itemNumber;
+});
+
+// Print Number on Screen
+
+
+
+/*
+MAKING THE ADD TO CART BUTTON WORK
+*/
+
+// Select the add to cart button
+const addToCartButton = document.querySelector("#addToCartButton");
+const navCartButton = document.querySelector('#icon-cart');
+// When the add to cart button is clicked, if the basket is not zero, change the cart item icon
+addToCartButton.addEventListener('click', ()=>{
+    if(itemNumber != 0 ){
+        console.log(addToCartButton);
+        //Code goes here
+    }
+});
+
 
 const app = () =>{
     navSlide();
