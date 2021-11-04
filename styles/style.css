@@ -164,4 +164,47 @@ nav #burger {
   color: #b6bcc8;
 }
 
+.item-counter {
+  background-color: #f7f8fd;
+  width: 100%;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.item-counter p {
+  font-weight: bold;
+  color: black;
+}
+.item-counter img {
+  width: 15px;
+}
+
+.add-to-cart-container {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #ff7d1a;
+  height: 60px;
+  border-radius: 15px;
+  box-shadow: 2px 10px 20px #ff7d1a45;
+}
+.add-to-cart-container img {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(22%) hue-rotate(120deg) brightness(104%) contrast(100%);
+}
+.add-to-cart-container p {
+  color: white;
+  font-weight: bold;
+}
+
+.add-to-cart-icons {
+  display: flex;
+  margin: auto;
+  width: 130px;
+  justify-content: space-around;
+  align-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */
