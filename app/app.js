@@ -83,6 +83,20 @@ itemMinus.addEventListener('click', ()=>{
 
 // Print Number on Screen
 
+/* MAKING THE CART NAV ICON OPEN UP THE LIGHTBOX */
+
+//Select Icon Cart
+const iconCart = document.querySelector("#icon-cart");
+const navCart = document.querySelector("#cartLightBox");
+//When the cart icon is clicked
+iconCart.addEventListener('click', ()=>{
+    console.log(navCart);
+    navCart.classList.toggle("not-active");
+});
+
+//toggle the class of active to the lightbox
+
+
 
 
 /*
@@ -95,10 +109,10 @@ const navCartButton = document.querySelector('#icon-cart');
 // When the add to cart button is clicked, if the basket is not zero, change the cart item icon
 addToCartButton.addEventListener('click', ()=>{
     if(itemNumber != 0 ){
-        console.log(addToCartButton);
-        //Code goes here
+        console.log("You need to set up cart numbers");
     }
 });
+
 
 
 const app = () =>{

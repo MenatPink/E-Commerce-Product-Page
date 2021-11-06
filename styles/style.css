@@ -115,6 +115,52 @@ nav #burger {
   left: 20px;
 }
 
+.not-active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#icon-cart {
+  cursor: pointer;
+}
+
+.cart {
+  width: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 260px;
+  top: 80px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.315);
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+}
+
+.cart-title-container {
+  border-bottom: 1px solid #b6bcc842;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.cart-title-container p {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding-left: 25px;
+}
+
+.cart-content-container {
+  display: flex;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+.cart-content-container p {
+  font-weight: bold;
+  color: #b6bcc8;
+}
+
 .description {
   height: 530px;
   padding-left: 30px;
