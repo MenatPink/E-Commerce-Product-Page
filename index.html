@@ -74,30 +74,31 @@
 
   <!-- CART LIGHTBOX -->
 
-  <div class="cart not-active" id="cartLightBox">
+  <div class="cart not-visible" id="cartLightBox">
     <div class="cart-title-container">
       <p>
         Cart
       </p>
     </div>
     <div class="cart-content-container">
-      <p class = "not-active">
-        Your cart is empty.
-      </p>
-      <div class = "cart-image">
-        <img src="/images/image-product-1-thumbnail.jpg" alt="Shoe Photo">
-      </div>
-      <div class = "cart-text">
-        <p>
-          Autumn Limited Edition...
+      <div class = "cart-content">
+        <p class = "not-active">
+          Your cart is empty.
         </p>
-        <p>
-          $125.00 x 3 <b>$375.00</b>
-        </p>
+        <img class = "cart-image" src="/images/image-product-1-thumbnail.jpg" alt="Shoe Photo">
+        <div class = "cart-text">
+          <p>
+            Autumn Limited Edition...
+          </p>
+          <p>
+            $125.00 x 3 <b>$375.00</b>
+          </p>
+        </div>
+        <img class = "cart-delete" src="/images/icon-delete.svg" alt="Delete">
       </div>
-      <div class = "cart-delete">
-        <img src="/images/icon-delete.svg" alt="Delete">
-      </div>
+      <button class="cart-checkout-button">
+        <p>Checkout</p>
+      </button>
     </div>
   </div>
 

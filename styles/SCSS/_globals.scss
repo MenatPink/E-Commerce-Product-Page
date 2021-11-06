@@ -9,3 +9,12 @@
 h1,h2,h3,h4,p{
     font-family: variables.$font;
 }
+
+.not-visible{
+    opacity:0;
+    visibility:hidden;
+}
+
+.not-active{
+    display:none;
+}

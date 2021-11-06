@@ -91,7 +91,7 @@ const navCart = document.querySelector("#cartLightBox");
 //When the cart icon is clicked
 iconCart.addEventListener('click', ()=>{
     console.log(navCart);
-    navCart.classList.toggle("not-active");
+    navCart.classList.toggle("not-visible");
 });
 
 //toggle the class of active to the lightbox
