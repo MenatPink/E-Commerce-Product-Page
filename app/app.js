@@ -77,8 +77,10 @@ itemPlus.addEventListener('click', ()=>{
 });
 // when minus number is clicked, take away one from number variable
 itemMinus.addEventListener('click', ()=>{
-    itemNumber--;
-    itemNumberContainer.innerHTML = itemNumber;
+    if(itemNumber !== 0){
+        itemNumber--;
+        itemNumberContainer.innerHTML = itemNumber;
+    }
 });
 
 // Print Number on Screen
@@ -104,15 +106,40 @@ MAKING THE ADD TO CART BUTTON WORK
 */
 
 // Select the add to cart button
+let cart;
 const addToCartButton = document.querySelector("#addToCartButton");
+const cartContent = document.querySelector("#cartContent");
+const cartCheckoutButton = document.querySelector("#cartCheckoutButton");
 const navCartButton = document.querySelector('#icon-cart');
+const cartData = document.querySelector('#cartData');
+const cartContentContainer = document.querySelector('.cart-content-container');
+const cartIsEmptyText = document.querySelector('#cartIsEmptyText');
 // When the add to cart button is clicked, if the basket is not zero, change the cart item icon
 addToCartButton.addEventListener('click', ()=>{
     if(itemNumber != 0 ){
-        console.log("You need to set up cart numbers");
+        cartData.innerHTML = "$125.00 x " + itemNumber + " " + "<b>" + "$" + 125*itemNumber + ".00" + "</b>";
+        cartContent.classList.remove("not-active");
+        cartCheckoutButton.classList.remove("not-active");
+        cartIsEmptyText.classList.add("not-active");
+    } else{
+        console.log(cartIsEmptyText);
     }
 });
 
+//MAKING THE DELETE ITEMS FROM CART BUTTON WORK
+const cartDelete = document.querySelector('#cartDelete');
+// When the cart delete button is clicked
+cartDelete.addEventListener('click',()=>{
+    //The Item Number is set back to zero,
+    itemNumber = 0;
+    // the class of not active is added to the content
+    cartContent.classList.add("not-active");
+    cartCheckoutButton.classList.add("not-active");
+    // and the class of not active is taken away from the cart is empty text to show it
+    cartIsEmptyText.classList.remove("not-active");
+    itemNumberContainer.innerHTML = itemNumber;
+
+});
 
 
 const app = () =>{

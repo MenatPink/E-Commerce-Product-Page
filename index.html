@@ -81,22 +81,24 @@
       </p>
     </div>
     <div class="cart-content-container">
-      <div class = "cart-content">
-        <p class = "not-active">
-          Your cart is empty.
-        </p>
+      <p id="cartIsEmptyText" 
+      class = ""
+      >
+        Your cart is empty.
+      </p>
+      <div class = "cart-content not-active" id = "cartContent">
         <img class = "cart-image" src="/images/image-product-1-thumbnail.jpg" alt="Shoe Photo">
         <div class = "cart-text">
           <p>
             Autumn Limited Edition...
           </p>
-          <p>
+          <p id="cartData">
             $125.00 x 3 <b>$375.00</b>
           </p>
         </div>
-        <img class = "cart-delete" src="/images/icon-delete.svg" alt="Delete">
+        <img class = "cart-delete" src="/images/icon-delete.svg" alt="Delete" id="cartDelete">
       </div>
-      <button class="cart-checkout-button">
+      <button class="cart-checkout-button not-active" id="cartCheckoutButton">
         <p>Checkout</p>
       </button>
     </div>
