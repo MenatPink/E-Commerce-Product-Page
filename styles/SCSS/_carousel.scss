@@ -1,16 +1,15 @@
 @use 'variables';
 
 .carousel{
-    width:100%;
     margin:auto;
     height: 300px;
     overflow:hidden;
     position:relative;
     .carousel-slide{
         display:flex;
-        width:100%;
         height:300px;
-    }
+        transform:translateX(-100%);
+        }
     img{
         object-fit: cover;
         min-width:100%;
