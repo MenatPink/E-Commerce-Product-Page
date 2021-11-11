@@ -23,7 +23,7 @@ const nextBtn = document.querySelector('#nextBtn');
 let counter = 1;
 // const size = carouselImages[0].clientWidth;
 
-carouselSlide.style.transform='translateX(' + (-100 * counter ) + '%)';
+// carouselSlide.style.transform='translateX(' + (-100 * counter ) + '%)';
 
 //Button Listeners
 

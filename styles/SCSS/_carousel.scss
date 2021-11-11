@@ -3,12 +3,13 @@
 .carousel{
     margin:auto;
     height: 300px;
+    width:100%;
     overflow:hidden;
     position:relative;
     .carousel-slide{
         display:flex;
         height:300px;
-        transform:translateX(-100%);
+        // transform:translateX(-100%);
         }
     img{
         object-fit: cover;
@@ -40,4 +41,7 @@
         #prevBtn{
          left:20px;
      }
+     .desktop-image-selector-container{
+        display:none;    
+    }
 }

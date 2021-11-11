@@ -17,6 +17,11 @@ h1, h2, h3, h4, p {
   display: none !important;
 }
 
+.content-container {
+  display: flex;
+  flex-direction: column;
+}
+
 nav {
   height: 70px;
   display: flex;
@@ -106,13 +111,13 @@ nav .icon-cart-container .icon-cart-number p {
 .carousel {
   margin: auto;
   height: 300px;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
 .carousel .carousel-slide {
   display: flex;
   height: 300px;
-  transform: translateX(-100%);
 }
 .carousel img {
   object-fit: cover;
@@ -143,6 +148,9 @@ nav .icon-cart-container .icon-cart-number p {
 }
 .carousel #prevBtn {
   left: 20px;
+}
+.carousel .desktop-image-selector-container {
+  display: none;
 }
 
 #icon-cart {
@@ -330,6 +338,79 @@ nav .icon-cart-container .icon-cart-number p {
   width: 130px;
   justify-content: space-around;
   align-items: center;
+}
+
+@media screen and (min-width: 1440px) {
+  nav {
+    margin: 0px 160px;
+    height: 110px;
+    border-bottom: 1px solid #b6bcc8;
+  }
+  nav #burger {
+    display: none;
+  }
+  nav .nav-links {
+    position: static;
+    width: 40%;
+    height: 100%;
+    background-color: none;
+  }
+  nav .nav-links img {
+    display: none;
+  }
+  nav .nav-links ul {
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+  nav .nav-links li {
+    font-weight: 300;
+    color: #b6bcc8;
+  }
+  nav .nav-right-container {
+    width: 10vw;
+    justify-content: space-around;
+  }
+  nav #avatar {
+    width: 50px;
+  }
+
+  .content-container {
+    flex-direction: row;
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+  .carousel .carousel-slide {
+    width: 445px;
+    height: 445px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .carousel #prevBtn {
+    display: none;
+  }
+  .carousel #nextBtn {
+    display: none;
+  }
+  .carousel .desktop-image-selector-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 445px;
+  }
+  .carousel .desktop-image-selector-container img {
+    width: 90px;
+    min-width: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
