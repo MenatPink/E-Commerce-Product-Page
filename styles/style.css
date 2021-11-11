@@ -45,6 +45,28 @@ nav #avatar {
 nav #burger {
   cursor: pointer;
 }
+nav .icon-cart-container {
+  position: relative;
+}
+nav .icon-cart-container .icon-cart-number {
+  position: absolute;
+  top: -6px;
+  right: -12px;
+  width: 20px;
+  height: 14px;
+  background-color: #ff7d1a;
+  z-index: 20;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav .icon-cart-container .icon-cart-number p {
+  color: white;
+  font-size: 8px;
+  font-weight: bold;
+}
 
 .nav-links {
   width: 250px;

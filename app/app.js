@@ -114,12 +114,16 @@ const navCartButton = document.querySelector('#icon-cart');
 const cartData = document.querySelector('#cartData');
 const cartContentContainer = document.querySelector('.cart-content-container');
 const cartIsEmptyText = document.querySelector('#cartIsEmptyText');
+const iconCartNumber = document.querySelector('#iconCartNumber');
+const iconCartNumberText = document.querySelector('#iconCartNumberText');
 // When the add to cart button is clicked, if the basket is not zero, change the cart item icon
 addToCartButton.addEventListener('click', ()=>{
     if(itemNumber != 0 ){
         cartData.innerHTML = "$125.00 x " + itemNumber + " " + "<b>" + "$" + 125*itemNumber + ".00" + "</b>";
         cartContent.classList.remove("not-active");
         cartCheckoutButton.classList.remove("not-active");
+        iconCartNumber.classList.remove("not-active");
+        iconCartNumberText.innerHTML = itemNumber;
         cartIsEmptyText.classList.add("not-active");
     } else{
         console.log(cartIsEmptyText);
