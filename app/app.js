@@ -145,6 +145,20 @@ cartDelete.addEventListener('click',()=>{
 
 });
 
+//MAKING THE DESKTOP PHOTO SELECTION WORK
+//Grab the collection of div's
+let mainImage = document.querySelector('#lastClone');
+let hoverImages = []
+for (let i = 0; i < 4; i++){
+    const hoverImage = document.querySelector("#hoverImage" + (i + 1));
+    hoverImages[i] = hoverImage
+    hoverImages[i].addEventListener("mouseover",()=>{
+        mainImage.src = "images/image-product-" + (i+1) + ".jpg";
+    });
+}
+
+//Foreach one that is hovered over, change the html link to the main photo to correspon with the url path
+
 
 const app = () =>{
     navSlide();
