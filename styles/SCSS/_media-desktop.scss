@@ -39,6 +39,7 @@
     // CONTENT CONTAINER
     .content-container{
         flex-direction:row;
+        margin:70px 160px 50px 160px;
     }
 
     //CAROUSEL
@@ -69,8 +70,26 @@
                 width:90px;
                 min-width:auto;
                 border-radius:10px;
-                margin-top:20px;
             }
         }
     }
-}
+
+    //DESCRIPTION
+    .description .item-text{
+        margin-top:2em; 
+    }
+    
+    //CTA
+    .cta-container{
+        flex-direction:row;
+        gap:20px;
+        justify-content:left;
+        margin-top:20px;
+    }
+    .add-to-cart-container{
+        margin:0;
+    }
+    .item-counter{
+        width:220px;
+    }
+} 

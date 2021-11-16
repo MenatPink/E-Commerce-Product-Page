@@ -152,6 +152,39 @@ nav .icon-cart-container .icon-cart-number p {
 .carousel .desktop-image-selector-container {
   display: none;
 }
+.carousel .desktop-image-selector-container .desktop-image-selector {
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  position: relative;
+}
+.carousel .desktop-image-selector-container .desktop-image-selector:hover {
+  border: 2px #ff7d1a solid;
+}
+.carousel .desktop-image-selector-container .desktop-image-selector:hover:before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+.carousel .desktop-image-selector-container .desktop-image-selector.image-1 {
+  background-image: url("../../images/image-product-1-thumbnail.jpg");
+}
+.carousel .desktop-image-selector-container .desktop-image-selector.image-2 {
+  background-image: url("../../images/image-product-2-thumbnail.jpg");
+}
+.carousel .desktop-image-selector-container .desktop-image-selector.image-3 {
+  background-image: url("../../images/image-product-3-thumbnail.jpg");
+}
+.carousel .desktop-image-selector-container .desktop-image-selector.image-4 {
+  background-image: url("../../images/image-product-4-thumbnail.jpg");
+}
 
 #icon-cart {
   cursor: pointer;
@@ -291,6 +324,12 @@ nav .icon-cart-container .icon-cart-number p {
   color: #b6bcc8;
 }
 
+.cta-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .item-counter {
   background-color: #f7f8fd;
   width: 100%;
@@ -378,6 +417,7 @@ nav .icon-cart-container .icon-cart-number p {
 
   .content-container {
     flex-direction: row;
+    margin: 70px 160px 50px 160px;
   }
 
   .carousel {
@@ -409,7 +449,25 @@ nav .icon-cart-container .icon-cart-number p {
     width: 90px;
     min-width: auto;
     border-radius: 10px;
+  }
+
+  .description .item-text {
+    margin-top: 2em;
+  }
+
+  .cta-container {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: left;
     margin-top: 20px;
+  }
+
+  .add-to-cart-container {
+    margin: 0;
+  }
+
+  .item-counter {
+    width: 220px;
   }
 }
 

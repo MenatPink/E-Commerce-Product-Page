@@ -1,5 +1,11 @@
 @use "variables";
 
+.cta-container{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
 .item-counter{
     background-color: variables.$light-grey-blue;
     width:100%;
