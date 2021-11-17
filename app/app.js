@@ -142,6 +142,8 @@ cartDelete.addEventListener('click',()=>{
     // and the class of not active is taken away from the cart is empty text to show it
     cartIsEmptyText.classList.remove("not-active");
     itemNumberContainer.innerHTML = itemNumber;
+    iconCartNumber.classList.add("not-active");
+    iconCartNumberText.innerHTML = itemNumber;
 
 });
 

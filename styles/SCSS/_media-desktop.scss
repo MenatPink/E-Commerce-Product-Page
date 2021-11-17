@@ -1,6 +1,6 @@
 @use 'variables';
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1240px) {
     // NAV
     nav{
         margin:0px 160px;
@@ -54,6 +54,7 @@
             height:445px;
             overflow:hidden;
             border-radius:10px;
+            transform:none !important;
         }
         #prevBtn{
             display:none;   
@@ -91,5 +92,12 @@
     }
     .item-counter{
         width:220px;
+    }
+
+    //NAVCART
+    .cart{
+        z-index:11;
+        width:400px;
+        left:80%;
     }
 } 

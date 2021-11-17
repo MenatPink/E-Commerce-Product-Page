@@ -80,7 +80,7 @@ nav .icon-cart-container .icon-cart-number p {
   top: 0px;
   height: 100vh;
   background-color: white;
-  transition: 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   transform: translateX(-100%);
 }
 .nav-links img {
@@ -379,7 +379,7 @@ nav .icon-cart-container .icon-cart-number p {
   align-items: center;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1240px) {
   nav {
     margin: 0px 160px;
     height: 110px;
@@ -432,6 +432,7 @@ nav .icon-cart-container .icon-cart-number p {
     height: 445px;
     overflow: hidden;
     border-radius: 10px;
+    transform: none !important;
   }
   .carousel #prevBtn {
     display: none;
@@ -468,6 +469,12 @@ nav .icon-cart-container .icon-cart-number p {
 
   .item-counter {
     width: 220px;
+  }
+
+  .cart {
+    z-index: 11;
+    width: 400px;
+    left: 80%;
   }
 }
 
